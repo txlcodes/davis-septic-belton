@@ -14,6 +14,9 @@ import {
   MapPin,
   Quote,
   X,
+  Clock,
+  Navigation,
+  CalendarClock,
 } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import CTA from "@/components/CTA";
@@ -26,6 +29,7 @@ import {
   valueProps,
   expectBullets,
   services,
+  steps,
   trustBadges,
   testimonials,
   areas,
@@ -299,6 +303,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ HOW IT WORKS (5 steps) ============ */}
+      <section className="bg-linen py-20 md:py-24">
+        <div className="container-x">
+          <Reveal className="text-center">
+            <span className="kicker justify-center">How it works</span>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+              From &ldquo;Just Looking&rdquo; to a Lit Fire
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-bark">
+              Five simple steps — no pressure, no surprises, just a clear path to a fire that
+              lights the first time, every time.
+            </p>
+          </Reveal>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+            {steps.map((s, i) => (
+              <Reveal key={s.title} variant="up" delay={i * 90}>
+                <div className="card-lift relative h-full rounded-lg border border-sand bg-cream p-6">
+                  <span className="bg-grad grid h-12 w-12 place-items-center rounded-full font-display text-xl font-bold text-white shadow-lg shadow-ember/25">
+                    {i + 1}
+                  </span>
+                  <h3 className="mt-4 text-[0.95rem] font-bold uppercase tracking-wide">
+                    {s.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-bark">{s.desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ============ RED STATS BAND (zigzag top) ============ */}
       <section className="relative">
         <div className="zigzag-top h-5 w-full bg-grad" />
@@ -400,14 +435,22 @@ export default function Home() {
           </Reveal>
 
           <Reveal variant="right" delay={120}>
-            <div className="overflow-hidden rounded-lg border border-sand shadow-lg">
-              <iframe
-                title="Southern Fireside & Home — 305 McGee Rd, Anderson, SC"
-                src="https://www.google.com/maps?q=305+McGee+Rd,+Anderson,+SC+29625&output=embed"
-                className="h-[26rem] w-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+            <div className="card-lift relative h-[26rem] overflow-hidden rounded-lg shadow-xl">
+              <Image
+                src="/images/gas-logs.jpg"
+                alt="Vented gas log set burning in a stone fireplace"
+                fill
+                className="object-cover"
               />
+              <div className="absolute bottom-4 left-4 right-4 flex items-center gap-3 rounded-lg bg-soot/85 p-4 backdrop-blur">
+                <span className="bg-grad grid h-11 w-11 shrink-0 place-items-center rounded-full text-white">
+                  <MapPin size={18} />
+                </span>
+                <div>
+                  <p className="text-sm font-bold text-linen">{site.address}</p>
+                  <p className="text-xs text-sand/70">Local showroom · live burning displays</p>
+                </div>
+              </div>
             </div>
           </Reveal>
         </div>
@@ -439,6 +482,104 @@ export default function Home() {
                 </figure>
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ VISIT SHOWROOM + GOOGLE MAP ============ */}
+      <section className="bg-linen py-20 md:py-24">
+        <div className="container-x">
+          <Reveal className="text-center">
+            <span className="kicker justify-center">Come see the fire</span>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">Visit Our Anderson Showroom</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-bark">
+              Photos only tell you so much. Stop by 305 McGee Rd and watch the flames in person —
+              compare log sets, inserts and fire pits side by side, and talk to the people who
+              install them.
+            </p>
+          </Reveal>
+
+          <div className="mt-10 grid items-stretch gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+            <Reveal variant="left">
+              <div className="flex h-full flex-col gap-4">
+                <a
+                  href={site.mapsHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-lift flex items-start gap-4 rounded-lg border border-sand bg-cream p-5"
+                >
+                  <span className="bg-grad grid h-11 w-11 shrink-0 place-items-center rounded-full text-white">
+                    <MapPin size={18} />
+                  </span>
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-bark/60">
+                      Showroom
+                    </p>
+                    <p className="mt-0.5 font-bold text-soot">{site.address}</p>
+                    <span className="mt-1 inline-flex items-center gap-1.5 text-sm font-bold text-ember">
+                      <Navigation size={13} /> Get Directions
+                    </span>
+                  </div>
+                </a>
+
+                <div className="flex items-start gap-4 rounded-lg border border-sand bg-cream p-5">
+                  <span className="bg-grad grid h-11 w-11 shrink-0 place-items-center rounded-full text-white">
+                    <Clock size={18} />
+                  </span>
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-bark/60">
+                      Hours
+                    </p>
+                    <p className="mt-0.5 font-semibold text-soot">{site.hours}</p>
+                  </div>
+                </div>
+
+                <a
+                  href={site.phoneHref}
+                  className="card-lift flex items-start gap-4 rounded-lg border border-sand bg-cream p-5"
+                >
+                  <span className="bg-grad grid h-11 w-11 shrink-0 place-items-center rounded-full text-white">
+                    <Phone size={18} />
+                  </span>
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-bark/60">
+                      Call or Text
+                    </p>
+                    <p className="mt-0.5 font-bold text-soot">{site.phone}</p>
+                  </div>
+                </a>
+
+                <div className="rounded-lg border border-sand bg-cream p-5">
+                  <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-bark/60">
+                    <CalendarClock size={14} className="text-ember" /> What to expect
+                  </p>
+                  <ul className="mt-3 space-y-2 text-sm text-char">
+                    {[
+                      "Live displays burning on the floor",
+                      "Compare vented vs. vent-free flames",
+                      "Straight answers from real installers",
+                    ].map((t) => (
+                      <li key={t} className="flex items-start gap-2">
+                        <Flame size={14} className="mt-0.5 shrink-0 text-ember" />
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal variant="right" delay={120}>
+              <div className="h-full min-h-[26rem] overflow-hidden rounded-lg border border-sand shadow-xl">
+                <iframe
+                  title="Southern Fireside & Home — 305 McGee Rd, Anderson, SC"
+                  src="https://www.google.com/maps?q=305+McGee+Rd,+Anderson,+SC+29625&output=embed"
+                  className="h-full min-h-[26rem] w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
