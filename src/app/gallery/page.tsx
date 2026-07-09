@@ -6,9 +6,9 @@ import Reveal from "@/components/Reveal";
 import { gallery } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Gallery | Southern Fireside & Home — Fireplaces, Fire Pits & Gas Logs",
+  title: "Gallery | Davis Septic, Grading & Pumping — Belton & Anderson, SC",
   description:
-    "Gas fireplaces, log sets, fire pits and outdoor living inspiration from Southern Fireside & Home in Anderson, SC.",
+    "Real jobs from Davis Septic, Grading & Pumping — pump-outs, septic installs, grading, land clearing and gravel driveways across the Upstate SC.",
 };
 
 export default function GalleryPage() {
@@ -16,8 +16,8 @@ export default function GalleryPage() {
     <>
       <PageHero
         kicker="Gallery"
-        title="Fire worth gathering around."
-        desc="A look at the kinds of fireplaces, log sets and outdoor fire features we help Upstate homeowners bring home."
+        title="Real trucks, real dirt, real work."
+        desc="A look at the kind of septic, grading and pumping jobs we handle for homes and businesses across the Upstate."
       />
 
       <section className="container-x py-16 md:py-20">
@@ -39,8 +39,7 @@ export default function GalleryPage() {
           ))}
         </div>
         <p className="mt-8 text-center text-sm text-bark/70">
-          Want to see the real thing? Our showroom displays burn live — stop by and feel the
-          difference in person.
+          Want to see more? Check our 5.0★ Google reviews — 230 neighbors and counting.
         </p>
       </section>
 

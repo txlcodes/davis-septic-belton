@@ -7,47 +7,47 @@ import Reveal from "@/components/Reveal";
 import { site, services, steps } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Services | Southern Fireside & Home — Gas Logs, Fireplaces & Gas Lines in Anderson, SC",
+  title: "Services | Davis Septic, Grading & Pumping — Belton & Anderson, SC",
   description:
-    "Gas log installation, fireplaces & inserts, gas line installation, fire pits, grill hookups and repair across Anderson and the Upstate. Call (864) 225-8627.",
+    "Septic tank pumping, septic installation, grading & land clearing, drain-field repair, gravel driveways and emergency service across Belton, Anderson & the Upstate. Call (864) 617-5035.",
 };
 
 const DETAILS: Record<string, string[]> = {
-  "Gas Log Installation": [
-    "Vented & vent-free log sets",
-    "Remote & thermostat controls",
-    "Sized and fitted to your firebox",
-    "Full safety test at light-up",
+  "Septic Tank Pumping": [
+    "Routine maintenance pump-outs",
+    "Emergency backups — same-day",
+    "Tank located, dug up & inspected",
+    "Honest read on your system's health",
   ],
-  "Fireplaces & Inserts": [
-    "Gas fireplaces & inserts",
-    "Showroom displays you can see burning",
-    "Efficient heat for real winters",
-    "Clean, finished installation",
+  "Septic System Installation": [
+    "Permitted new systems & replacements",
+    "Concrete & plastic tanks",
+    "Sized to your soil test & home",
+    "Drain field built & inspected",
   ],
-  "Gas Line Installation": [
-    "New lines & extensions",
-    "Grills, cooktops, logs & heaters",
-    "Natural gas & propane",
-    "Pressure-tested, run to code",
+  "Grading & Land Clearing": [
+    "Lot grading & yard leveling",
+    "Land clearing & 'yard rip'",
+    "Brush & stump removal",
+    "Clean, buildable, drainable grade",
   ],
-  "Fire Pits & Outdoor Living": [
-    "Gas fire pits & burners",
-    "Outdoor fireplaces",
-    "Patio heaters",
-    "Weather-ready connections",
+  "Sewer & Drain-Field Repair": [
+    "Failed drain / leach fields",
+    "Broken & root-clogged lines",
+    "Slow-drain diagnosis",
+    "Dug & repaired without wrecking the yard",
   ],
-  "Grill Hookups": [
-    "Built-in & freestanding grills",
-    "Properly sized lines & shut-offs",
-    "No more empty propane tanks",
-    "Leak-checked before first cookout",
+  "Gravel, Driveways & Demolition": [
+    "Gravel driveways built & refreshed",
+    "Culverts & drainage cut",
+    "Small demolition & haul-off",
+    "Holds up to Carolina rain",
   ],
-  "Service & Repair": [
-    "Pilot & ignition repairs",
-    "Sooting & flame-pattern fixes",
-    "Annual cleanings & safety checks",
-    "Most major brands serviced",
+  "Real Estate & Emergency Service": [
+    "Pump-outs & inspections for closings",
+    "Rentals & property managers",
+    "After-hours emergencies",
+    "One call and we're on the way",
   ],
 };
 
@@ -56,8 +56,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         kicker="Our services"
-        title="Gas fire, done properly."
-        desc="From a single log set to a full outdoor living project — selection, installation, and the service to keep it burning right."
+        title="The dirty work, done right."
+        desc="From a routine pump-out to a full new system and a graded lot — one local crew, our own equipment, and 30+ years doing it the right way."
       />
 
       <section className="container-x py-16 md:py-20">
@@ -104,6 +104,9 @@ export default function ServicesPage() {
             <h2 className="mt-3 max-w-2xl text-3xl font-bold md:text-4xl">
               A simple, honest process.
             </h2>
+            <p className="mt-3 max-w-2xl text-bark">
+              Same straightforward steps whether it&apos;s a pump-out, an install or a grading job.
+            </p>
           </Reveal>
           <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {steps.map((s, i) => (

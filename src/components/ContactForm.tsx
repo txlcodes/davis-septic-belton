@@ -5,12 +5,12 @@ import { Send, CheckCircle2 } from "lucide-react";
 import { site } from "@/lib/site";
 
 const SERVICES = [
-  "Gas Logs",
-  "Fireplace / Insert",
-  "Gas Line Installation",
-  "Fire Pit / Outdoor",
-  "Grill Hookup",
-  "Service & Repair",
+  "Septic Pumping",
+  "Emergency — Backing Up",
+  "Septic Installation",
+  "Grading / Land Clearing",
+  "Drain / Sewer Repair",
+  "Gravel / Driveway",
   "Something Else",
 ];
 

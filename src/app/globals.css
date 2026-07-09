@@ -1,27 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-soot: #0d0e10;
-  --color-char: #17181b;
-  --color-bark: #4c4f56;
-  --color-linen: #f4f5f7;
+  --color-soot: #08182e;
+  --color-char: #0d2340;
+  --color-bark: #4a5c74;
+  --color-linen: #eef3f9;
   --color-cream: #ffffff;
-  --color-sand: #dfe2e8;
-  --color-ember: #d20000;
-  --color-flame: #ef1c1c;
-  --color-glow: #ff5252;
-  --color-brass: #a16207;
+  --color-sand: #d2dded;
+  --color-ember: #1d4ed8;
+  --color-flame: #2563eb;
+  --color-glow: #3b82f6;
+  --color-brass: #f97316;
+  --color-safety: #f97316;
+  --color-safetydeep: #ea580c;
 }
 
 @theme inline {
-  --font-display: var(--font-playfair), Georgia, serif;
-  --font-sans: var(--font-figtree), system-ui, sans-serif;
+  --font-display: var(--font-anton), Impact, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
 }
 
 body {
   background: var(--color-linen);
   color: var(--color-soot);
-  font-family: var(--font-figtree), system-ui, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -29,8 +31,9 @@ h1,
 h2,
 h3,
 .font-display {
-  font-family: var(--font-playfair), system-ui, sans-serif;
-  font-weight: 700;
+  font-family: var(--font-anton), Impact, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
 }
 
 h1,
@@ -65,22 +68,23 @@ h2 {
   content: "";
   width: 2rem;
   height: 2px;
-  background: var(--color-ember);
+  background: var(--color-brass);
 }
 
 .text-grad {
-  background: linear-gradient(100deg, #ff5252, #ef1c1c 55%, #d20000);
+  background: linear-gradient(100deg, #3b82f6, #2563eb 55%, #1d4ed8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 .bg-grad {
-  background: linear-gradient(115deg, #ef1c1c, #b40000);
+  background: linear-gradient(115deg, #2563eb, #1538a8);
 }
 .bg-grad-deep {
   background:
-    radial-gradient(70rem 30rem at 85% -10%, rgba(210, 0, 0, 0.22), transparent 60%),
-    linear-gradient(180deg, #17181b, #0d0e10);
+    radial-gradient(70rem 30rem at 85% -10%, rgba(37, 99, 235, 0.28), transparent 60%),
+    radial-gradient(50rem 24rem at 5% 110%, rgba(249, 115, 22, 0.16), transparent 55%),
+    linear-gradient(180deg, #0d2340, #08182e);
 }
 
 /* reveal on scroll */
@@ -113,10 +117,10 @@ h2 {
 @keyframes pulsedot {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(210, 0, 0, 0.5);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5);
   }
   60% {
-    box-shadow: 0 0 0 12px rgba(210, 0, 0, 0);
+    box-shadow: 0 0 0 12px rgba(37, 99, 235, 0);
   }
 }
 .pulsedot {

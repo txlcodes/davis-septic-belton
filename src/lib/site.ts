@@ -1,81 +1,85 @@
 export const site = {
-  name: "Southern Fireside & Home",
-  shortName: "Southern Fireside",
-  phone: "(864) 225-8627",
-  phoneHref: "tel:+18642258627",
-  email: "info@southernfiresideandhome.com", // placeholder — confirm with client
-  address: "305 McGee Rd, Anderson, SC 29625",
-  mapsHref: "https://maps.google.com/?q=305+McGee+Rd,+Anderson,+SC+29625",
-  hours: "Showroom open from 10 AM — call ahead to confirm",
-  tagline: "Gas logs, fireplaces & outdoor fire — installed safely by local pros.",
-  serving: "Serving Anderson, SC & the Upstate — Fireplaces, Gas Logs & Gas Installation",
+  name: "Davis Septic, Grading & Pumping",
+  shortName: "Davis Septic",
+  phone: "(864) 617-5035",
+  phoneHref: "tel:+18646175035",
+  email: "info@davissepticandgrading.com", // placeholder — confirm with client
+  address: "1543 Holliday Dam Rd, Belton, SC 29627",
+  mapsHref: "https://maps.google.com/?q=Davis+Septic+Grading+and+Pumping+Belton+SC",
+  hours: "Mon–Fri 9 AM – 5 PM · Emergencies answered anytime",
+  tagline: "We'll make your crap disappear — septic pumping, grading & installs done right.",
+  serving: "Serving Belton, Anderson & the Upstate for 30+ years — Septic, Grading & Pumping",
+  rating: "5.0",
+  reviewCount: "230",
+  years: "30+",
+  slogan: '"The Crap Magician"',
 };
 
 export const socials = [
+  { label: "Google", href: "https://maps.google.com/?q=Davis+Septic+Grading+and+Pumping+Belton+SC", icon: "google" },
   { label: "Facebook", href: "#", icon: "facebook" }, // placeholder — confirm real page
-  { label: "Google", href: "https://maps.google.com/?q=305+McGee+Rd,+Anderson,+SC+29625", icon: "google" },
-  { label: "Instagram", href: "#", icon: "youtube" }, // placeholder — confirm real page
+  { label: "Website", href: "https://davissepticandgrading.godaddysites.com/", icon: "youtube" },
 ];
 
-// Red icon strip directly under the hero (Chad Dodson: metal/shingle/tpo/shake)
+// Icon strip directly under the hero
 export const serviceStrip = [
-  { label: "Gas Logs", icon: "flame" },
-  { label: "Fireplaces & Inserts", icon: "home" },
-  { label: "Fire Pits & Outdoor", icon: "sparkles" },
-  { label: "Gas Line Installation", icon: "wrench" },
+  { label: "Septic Pumping", icon: "flame" },
+  { label: "Septic Installs", icon: "home" },
+  { label: "Grading & Land Clearing", icon: "sparkles" },
+  { label: "Sewer & Drain Repair", icon: "wrench" },
 ];
 
-// "Tired of contractors who…" pain points
+// "Tired of septic companies who…" pain points
 export const painPoints = [
-  "Vague quotes that change once the work starts",
-  "Installers who take a deposit and disappear",
-  "Messy job sites — dust, debris, damaged floors",
-  "Gas lines that were never pressure-tested",
-  "Pressure to replace when a simple repair works",
-  "No straight answers when something goes wrong",
+  "No-shows when your tank is backing up right now",
+  "Surprise charges tacked on after the truck arrives",
+  "Yards left rutted, muddy and torn up",
+  "\"Replace the whole system\" when a pump-out would do",
+  "Guys who won't explain what's actually wrong",
+  "Voicemail boxes that never call you back",
 ];
 
-// 2×2 value grid (Chad: Minimize the Mess / Warrantied / Rapid Response / Innovative)
+// 2×2 value grid
 export const valueProps = [
   {
     icon: "sparkles",
-    title: "Clean, Careful Installs",
-    desc: "Drop cloths down, shoes covered, dust contained. We leave your home exactly as we found it — minus the cold firebox.",
+    title: "We Leave the Yard Right",
+    desc: "Grading and cleanup are our trade. When the truck pulls off, your lawn looks like we were never there — not like a battlefield.",
   },
   {
     icon: "shield",
-    title: "Safety-Tested Work",
-    desc: "Every gas line is pressure-tested and every unit checked before we ever light it. No shortcuts on gas — ever.",
+    title: "Licensed & Fully Insured",
+    desc: "Permitted septic installs, code-compliant drain fields, real insurance. Big equipment, handled the right way, every time.",
   },
   {
     icon: "store",
-    title: "Real Local Showroom",
-    desc: "See live displays burning in person at 305 McGee Rd before you decide. Buy the fire you actually watched.",
+    title: "30+ Years, One Family",
+    desc: "Three decades pumping and building septic systems across the Upstate. You get the owner's crew — not a rotating subcontractor.",
   },
   {
     icon: "handshake",
-    title: "Honest, Fair Pricing",
-    desc: "We'll tell you when a repair beats a replacement. Most of our work is referrals — that only comes from straight talk.",
+    title: "Straight Talk, Fair Price",
+    desc: "We'll tell you when a $300 pump-out beats a $9,000 replacement. 230 five-star reviews come from honesty, not upselling.",
   },
 ];
 
 // "Here's what you can expect" list
 export const expectBullets = [
-  "A clear look at your firebox, venting and gas supply",
-  "Honest repair-vs-replace guidance",
+  "A clear look at your tank, lines and drain field",
+  "Honest pump-vs-repair-vs-replace guidance",
   "Upfront pricing and a defined scope",
-  "Respectful property protection and cleanup",
-  "Natural gas and propane expertise",
+  "Heavy equipment operated with a light touch on your yard",
+  "Residential, commercial, mobile-home & RV systems",
 ];
 
-// Honest trust strip (no fake certification logos)
+// Honest trust strip (no fake logos)
 export const trustBadges = [
+  "5.0★ · 230 Google Reviews",
   "Licensed & Insured",
-  "Natural Gas & Propane",
-  "Vented & Vent-Free",
-  "Free In-Home Estimates",
-  "Local Showroom",
-  "Most Brands Serviced",
+  "30+ Years Local",
+  "Free Estimates",
+  "Emergency Service",
+  "Residential & Commercial",
 ];
 
 export const nav = [
@@ -88,99 +92,99 @@ export const nav = [
 
 export const products = [
   {
-    title: "Gas Logs",
-    desc: "Vented and vent-free log sets that light with a switch — no hauling wood, no cold ash.",
-    img: "/images/gas-logs.jpg",
+    title: "Septic Pumping",
+    desc: "Routine and emergency tank pump-outs that stop backups before they reach your floors — done fast, done clean.",
+    img: "/images/septic-tank.jpg",
   },
   {
-    title: "Fireplaces & Inserts",
-    desc: "Efficient gas fireplaces and inserts that turn a drafty firebox into real, usable heat.",
-    img: "/images/stone-fireplace.jpg",
+    title: "Septic Installation",
+    desc: "Permitted new-system installs and full tank replacements sized right for your home and soil.",
+    img: "/images/septic-install.jpg",
   },
   {
-    title: "Fire Pits & Outdoor",
-    desc: "Gas fire pits and outdoor fireplaces that make your patio the best room in the house.",
-    img: "/images/firepit.jpg",
+    title: "Grading & Land Clearing",
+    desc: "Lot grading, yard leveling, land clearing and 'yard rip' — heavy iron in experienced hands.",
+    img: "/images/excavator.jpg",
   },
   {
-    title: "Grills & Gas Lines",
-    desc: "Grill hookups and new gas lines run clean, tested and up to code — done right the first time.",
-    img: "/images/grill.jpg",
+    title: "Gravel & Driveways",
+    desc: "Fresh gravel, driveway builds and repair, culverts and drainage that hold up to Carolina rain.",
+    img: "/images/gravel.jpg",
   },
 ];
 
 export const services = [
   {
-    title: "Gas Log Installation",
-    desc: "Vented and vent-free gas log sets sized to your firebox, with remote and thermostat options. We install, test and show you how everything works.",
-    img: "/images/gas-logs.jpg",
+    title: "Septic Tank Pumping",
+    desc: "Scheduled maintenance pump-outs and 'it's backing up NOW' emergencies. We locate, dig up, pump and inspect your tank — and tell you honestly how it looks.",
+    img: "/images/septic-tank.jpg",
   },
   {
-    title: "Fireplaces & Inserts",
-    desc: "New gas fireplaces and inserts for living rooms, dens and additions — from selection in our showroom to a clean, finished installation.",
-    img: "/images/stone-fireplace.jpg",
+    title: "Septic System Installation",
+    desc: "New septic systems and tank replacements, permitted and inspected. Concrete or plastic, conventional or low-pressure — sized to your home and soil test.",
+    img: "/images/septic-install.jpg",
   },
   {
-    title: "Gas Line Installation",
-    desc: "New gas lines and hookups for logs, grills, cooktops, patio heaters and more — pressure-tested and run to code by experienced installers.",
-    img: "/images/gas-flame.jpg",
+    title: "Grading & Land Clearing",
+    desc: "Lot grading, yard leveling, land clearing, brush and stump removal, and 'yard rip.' We move dirt for a living and leave a clean, buildable, drainable grade.",
+    img: "/images/excavator.jpg",
   },
   {
-    title: "Fire Pits & Outdoor Living",
-    desc: "Gas fire pits, outdoor fireplaces and patio flame features that extend your evenings outside through every Upstate season.",
-    img: "/images/firepit.jpg",
+    title: "Sewer & Drain-Field Repair",
+    desc: "Broken lines, failed drain fields, root intrusion and slow drains. We dig, diagnose and repair sewer and leach lines without tearing up the whole yard.",
+    img: "/images/septic-install.jpg",
   },
   {
-    title: "Grill Hookups",
-    desc: "Built-in and freestanding grill connections with properly sized lines and shut-offs — so you never run out of propane mid-cookout again.",
-    img: "/images/grill.jpg",
+    title: "Gravel, Driveways & Demolition",
+    desc: "Gravel driveways built and refreshed, culverts set, drainage cut, and small demolition and haul-off. If it needs digging, hauling or leveling, we handle it.",
+    img: "/images/gravel.jpg",
   },
   {
-    title: "Service & Repair",
-    desc: "Pilot and ignition trouble, sooting, odd smells, annual cleanings and safety checks — we service what we sell and most major brands.",
-    img: "/images/wintertime-fire.jpg",
+    title: "Real Estate & Emergency Service",
+    desc: "Fast pump-outs and inspections for closings and rentals, plus after-hours emergencies when a system fails. One call and we're on the way.",
+    img: "/images/truck.jpg",
   },
 ];
 
 export const reasons = [
   {
-    title: "Safety-First Gas Work",
-    desc: "Every line is pressure-tested and every unit checked before we light it. Gas work is not a DIY job — we treat yours with the care it demands.",
+    title: "30+ Years in the Upstate Ground",
+    desc: "Three decades pumping, grading and installing across Belton, Anderson and the surrounding counties. There isn't much red-clay septic trouble we haven't already fixed.",
   },
   {
-    title: "A Real Local Showroom",
-    desc: "See burning displays in person at 305 McGee Rd before you buy — not a photo on a website, the actual fire you'll live with.",
+    title: "5.0 Stars Across 230 Reviews",
+    desc: "Neighbors don't hand out a perfect score for nothing. Our reputation is built one honest, on-time, cleaned-up job at a time.",
   },
   {
-    title: "Clean, Careful Installs",
-    desc: "Drop cloths down, shoes covered, dust contained. We leave your hearth beautiful and the rest of your home exactly as we found it.",
+    title: "We Protect Your Yard",
+    desc: "Grading is our other trade, so we know how to get heavy equipment in and out without wrecking your lawn. We backfill, level and clean up before we go.",
   },
   {
-    title: "Straight Answers, Fair Prices",
-    desc: "We'll tell you when a $500 fix beats a $3,000 replacement. Most of our work comes from referrals — that only happens with honest advice.",
+    title: "Honest Recommendations",
+    desc: "We'll tell you when a simple pump-out will do instead of a full replacement. Straight answers are why so much of our work comes from referrals.",
   },
 ];
 
 export const steps = [
   {
-    title: "Call or Stop By",
-    desc: "Tell us what you have in mind — or visit the showroom and see live displays burning.",
+    title: "Call or Text",
+    desc: "Tell us what's going on — a slow drain, a backup, a new build or a lot that needs grading. We'll talk it through.",
   },
   {
-    title: "In-Home Assessment",
-    desc: "We measure your firebox, check venting and gas supply, and talk through your options.",
+    title: "On-Site Look",
+    desc: "We locate your tank and lines, check the drain field and grade, and see exactly what the job needs.",
   },
   {
     title: "Clear, Honest Quote",
-    desc: "One written price for equipment and installation. No pressure, no surprise add-ons.",
+    desc: "One upfront price for the work. No surprise add-ons once the truck is in your driveway.",
   },
   {
-    title: "Professional Install",
-    desc: "Licensed, experienced installers run the line, set the unit and test every connection.",
+    title: "We Do the Dirty Work",
+    desc: "Licensed crew, right equipment. We pump, install, repair or grade — and keep your yard as intact as we can.",
   },
   {
-    title: "Light-Up & Walkthrough",
-    desc: "We fire it up, verify safe operation and show you every control before we leave.",
+    title: "Cleaned Up & Explained",
+    desc: "We backfill, level and haul off, then walk you through what we found and how to keep it healthy.",
   },
 ];
 
@@ -188,79 +192,77 @@ export const testimonials = [
   {
     name: "Rebecca H.",
     area: "Anderson, SC",
-    text: "They installed vented gas logs in our den before Thanksgiving. Showed up when they said, laid drop cloths everywhere, and walked me through the remote twice. The room finally gets used all winter.",
+    text: "Our tank backed up on a Sunday and they answered the phone and came out. Pumped it, found the real problem, and didn't try to sell us a new system like the last guy. Left the yard clean. Lifesavers.",
   },
   {
     name: "Mark & Dana T.",
     area: "Belton, SC",
-    text: "Had them run a gas line to our new grill and fire pit. Clean work, pressure-tested everything, and the price matched the quote to the dollar. Couldn't ask for more.",
+    text: "Davis graded our lot and put in a new septic system for our build. Permitted, inspected, and the price matched the quote to the dollar. Heavy equipment everywhere and you'd never know it afterward.",
   },
   {
     name: "Jim P.",
-    area: "Pendleton, SC",
-    text: "Our fireplace insert quit lighting and two companies told us to replace it. Southern Fireside fixed the ignition for a fraction of that. Honest folks — they've earned all our future business.",
+    area: "Williamston, SC",
+    text: "Needed a septic inspection and pump for a house closing on short notice. They fit us in, got the paperwork done, and the buyer's agent was impressed. Thirty years in and they still hustle.",
   },
 ];
 
 export const areas = [
-  "Anderson",
   "Belton",
+  "Anderson",
   "Williamston",
+  "Honea Path",
+  "Pelzer",
+  "Piedmont",
   "Pendleton",
-  "Clemson",
-  "Seneca",
   "Easley",
   "Powdersville",
-  "Piedmont",
-  "Honea Path",
   "Iva",
-  "Townville",
   "Starr",
+  "Seneca",
+  "Greenville",
   "Lake Hartwell",
 ];
 
 export const faqs = [
   {
-    q: "What's the difference between vented and vent-free gas logs?",
-    a: "Vented logs burn with a tall, realistic flame and send exhaust up your chimney — beautiful, but most of the heat goes up the flue. Vent-free logs burn cleaner and push nearly all their heat into the room, with some limits on room size and placement. We'll look at your firebox and help you pick the right fit.",
+    q: "How often should I have my septic tank pumped?",
+    a: "For most homes, every 3 to 5 years — sooner for larger households or smaller tanks. If you're seeing slow drains, gurgling, odors or wet spots over the drain field, don't wait. We can check yours and put you on a simple schedule so it never becomes an emergency.",
   },
   {
-    q: "Can you run a gas line to my grill or fire pit?",
-    a: "Yes — that's one of our most common jobs. We run properly sized lines with shut-off valves for grills, fire pits, patio heaters, cooktops and more, then pressure-test the whole run before it ever sees gas.",
+    q: "My drains are slow / the toilet is backing up — is that an emergency?",
+    a: "Often, yes. A backing-up system can flood floors and damage the drain field fast. Call us right away — we answer after hours and can usually get a truck to you quickly to pump it down and find the cause.",
   },
   {
-    q: "Do you work with both natural gas and propane?",
-    a: "We do. If your home doesn't have natural gas service, most log sets, fireplaces and fire features are available in propane versions, and we can set up the connection to your tank.",
+    q: "Do you install brand-new septic systems?",
+    a: "We do — permitted new installs and full tank replacements, concrete or plastic, sized to your home and soil test. We handle the digging, the tank, the drain field and the inspection so it's done to code the first time.",
   },
   {
-    q: "Do gas logs actually heat the room?",
-    a: "Vent-free sets and gas inserts absolutely do — many customers heat their main living space with them all winter. Vented sets are more about ambiance with some warmth. Tell us what you want and we'll steer you to the right type.",
+    q: "Do you do grading and land clearing too, or just septic?",
+    a: "Both. Grading, lot leveling, land clearing, 'yard rip,' gravel driveways, culverts, drainage and small demolition are all part of what we do. Running our own heavy equipment is exactly why we can install septic without wrecking your yard.",
   },
   {
-    q: "How long does an installation take?",
-    a: "Most gas log installs are done in a few hours. Fireplace inserts and new gas lines typically take a day. We confirm the timeline with your quote so there are no surprises.",
+    q: "Can you pump a mobile home, rental or commercial system?",
+    a: "Yes — residential, mobile-home, rental and commercial systems are all in our wheelhouse. Property managers and landlords call us for regular service across the Upstate.",
   },
   {
-    q: "Can you service a fireplace or logs you didn't install?",
-    a: "In most cases, yes. We service most major brands — cleanings, pilot and ignition repairs, sooting issues and safety checks. If we can't get parts for it, we'll tell you up front.",
+    q: "I'm selling my house and need a septic inspection — can you help fast?",
+    a: "Absolutely. Real-estate pump-outs and inspections for closings are routine for us, and we know they're time-sensitive. Call us with your closing date and we'll work to fit you in.",
   },
   {
-    q: "Should gas logs and fireplaces be serviced every year?",
-    a: "We recommend an annual cleaning and safety check before each burning season. It keeps the flame pattern right, prevents sooting, and catches small issues before they become expensive ones.",
+    q: "Will you tear up my yard getting to the tank?",
+    a: "We do everything we can not to. Grading is our trade, so we get equipment in and out carefully, dig only what's needed, then backfill, level and clean up. Most customers are surprised how good the yard looks when we leave.",
   },
   {
-    q: "Do I need to buy from you for you to install it?",
-    a: "We're happiest installing equipment we've helped you choose — it lets us stand behind the whole job. Already bought something? Call us and we'll tell you honestly whether we can install it.",
+    q: "What areas do you serve?",
+    a: "Belton and Anderson are home base, and we cover the surrounding Upstate — Williamston, Honea Path, Pelzer, Piedmont, Pendleton, Easley, Powdersville and beyond. Not sure if you're in range? Just call.",
   },
 ];
 
 export const gallery = [
-  { img: "/images/firepit.jpg", title: "Gas fire pit & patio at dusk" },
-  { img: "/images/stone-fireplace.jpg", title: "Stone-surround gas fireplace" },
-  { img: "/images/gas-logs.jpg", title: "Vented gas log set" },
-  { img: "/images/wintertime-fire.jpg", title: "A fire that lights every time" },
-  { img: "/images/fireplace-blaze.jpg", title: "Warmth all season long" },
-  { img: "/images/grill.jpg", title: "Grill hookups done right" },
-  { img: "/images/cozy-home.jpg", title: "Comfort for the whole home" },
-  { img: "/images/outdoor-living.jpg", title: "Living spaces worth gathering in" },
+  { img: "/images/truck.jpg", title: "The Davis Septic pump truck on the job" },
+  { img: "/images/septic-tank.jpg", title: "Concrete septic tank uncovered for pumping" },
+  { img: "/images/septic-install.jpg", title: "New septic tanks set in the trench" },
+  { img: "/images/excavator.jpg", title: "Heavy iron ready for grading & clearing" },
+  { img: "/images/gravel.jpg", title: "Fresh gravel driveway, tree-lined and graded" },
+  { img: "/images/rural-home.jpg", title: "Keeping Upstate homes running clean" },
 ];

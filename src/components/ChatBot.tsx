@@ -1,24 +1,24 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Flame, X, Phone, MessageSquare, Send } from "lucide-react";
+import { Sparkles, X, Phone, MessageSquare, Send } from "lucide-react";
 import { site } from "@/lib/site";
 
 type Msg = { from: "bot" | "user"; text: string };
 type Stage = "menu" | "name" | "phone" | "detail" | "done";
 
 const QUICK = [
-  { key: "logs", label: "🔥 Gas logs / fireplace" },
-  { key: "line", label: "🔧 Gas line / hookup" },
-  { key: "repair", label: "🛠️ Service & repair" },
-  { key: "visit", label: "📍 Showroom & hours" },
+  { key: "emergency", label: "🚨 Backed up now!" },
+  { key: "pump", label: "🚽 Septic pumping" },
+  { key: "install", label: "🏗️ Install / grading" },
+  { key: "hours", label: "📍 Area & hours" },
   { key: "human", label: "💬 Talk to a person" },
 ];
 
 export default function ChatBot() {
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState<Msg[]>([
-    { from: "bot", text: "Hey there! 👋 Welcome to Southern Fireside & Home. What can we help you with?" },
+    { from: "bot", text: "Hey there! 👋 You've reached Davis Septic — The Crap Magician. What can we help you with?" },
   ]);
   const [stage, setStage] = useState<Stage>("menu");
   const [input, setInput] = useState("");
@@ -38,18 +38,22 @@ export default function ChatBot() {
 
   function pick(key: string, label: string) {
     user(label.replace(/^[^ ]+ /, ""));
-    if (key === "visit") {
-      bot(`Our showroom is at ${site.address} — live burning displays in-store. ${site.hours}. Want us to call you instead? Tap "Talk to a person".`);
+    if (key === "hours") {
+      bot(`We're based at ${site.address} and cover Belton, Anderson & the Upstate. ${site.hours}. Want us to call you? Tap "Talk to a person".`);
       return;
     }
     const topicMap: Record<string, string> = {
-      logs: "Gas logs / fireplace",
-      line: "Gas line / hookup",
-      repair: "Service & repair",
+      emergency: "EMERGENCY — backing up",
+      pump: "Septic pumping",
+      install: "Install / grading",
       human: "General question",
     };
     setLead((l) => ({ ...l, topic: topicMap[key] || key }));
-    bot("Great — we can help with that. What's your name?");
+    if (key === "emergency") {
+      bot("Sorry you're dealing with that! For an active backup the fastest fix is a phone call — but leave your name and number here and we'll jump on it. What's your name?");
+    } else {
+      bot("Great — we can help with that. What's your name?");
+    }
     setStage("name");
   }
 
@@ -66,11 +70,11 @@ export default function ChatBot() {
       setStage("phone");
     } else if (stage === "phone") {
       setLead((l) => ({ ...l, phone: text }));
-      bot("Got it. Briefly, what's going on — new install, upgrade, or a problem with an existing unit?");
+      bot("Got it. Briefly, what's going on — a pump-out, a new system, grading, or a problem with an existing one?");
       setStage("detail");
     } else if (stage === "detail") {
       setLead((l) => ({ ...l, detail: text }));
-      bot("Perfect — you're all set. The fastest way to get this moving is a quick call, or send it straight to our inbox below. We'll get right back to you. 🔥");
+      bot("Perfect — you're all set. The fastest way to get this moving is a quick call, or send it straight to our inbox below. We'll get right back to you. ✨");
       setStage("done");
     }
   }
@@ -89,13 +93,13 @@ export default function ChatBot() {
         aria-label={open ? "Close chat" : "Chat with us"}
         className="fixed bottom-5 left-5 z-50 grid h-14 w-14 place-items-center rounded-md bg-char text-glow shadow-xl ring-1 ring-flame/40 transition-transform hover:scale-105"
       >
-        {open ? <X size={22} /> : <Flame size={24} className="flicker" />}
+        {open ? <X size={22} /> : <Sparkles size={24} className="flicker" />}
       </button>
 
       {open && (
         <div className="fixed bottom-24 left-5 z-50 flex max-h-[70vh] w-[min(22rem,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-lg border border-sand bg-cream shadow-2xl">
           <div className="bg-grad-deep px-4 py-3">
-            <p className="text-sm font-bold text-linen">Southern Fireside &amp; Home</p>
+            <p className="text-sm font-bold text-linen">Davis Septic · The Crap Magician</p>
             <p className="text-[0.7rem] text-sand/70">Usually replies within the hour</p>
           </div>
 

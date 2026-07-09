@@ -6,9 +6,9 @@ import ContactForm from "@/components/ContactForm";
 import { site, areas } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact | Southern Fireside & Home — Anderson, SC",
+  title: "Contact | Davis Septic, Grading & Pumping — Belton & Anderson, SC",
   description:
-    "Call (864) 225-8627 or visit our showroom at 305 McGee Rd, Anderson, SC for gas logs, fireplaces, fire pits and gas line installation.",
+    "Call or text (864) 617-5035 for septic pumping, installs, grading, drain repair and emergency service across Belton, Anderson & the Upstate SC.",
 };
 
 export default function ContactPage() {
@@ -16,8 +16,8 @@ export default function ContactPage() {
     <>
       <PageHero
         kicker="Contact"
-        title="Let's talk fire."
-        desc="Call, visit the showroom, or send the form — whichever is easiest. We'll take it from there."
+        title="Let's make your crap disappear."
+        desc="Call, text, or send the form — whichever is easiest. Backups and emergencies get answered fast."
       />
 
       <section className="container-x py-16 md:py-20">
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 },
                 {
                   icon: MapPin,
-                  label: "Showroom",
+                  label: "Home Base",
                   value: site.address,
                   href: site.mapsHref,
                 },
@@ -82,8 +82,8 @@ export default function ContactPage() {
             <div className="rounded-lg border border-sand bg-cream p-6 shadow-lg md:p-8">
               <h2 className="text-2xl font-bold">Request a free estimate</h2>
               <p className="mb-6 mt-2 text-sm text-bark">
-                Tell us what you&apos;re dreaming about — we&apos;ll call you back to talk it
-                through.
+                Tell us what&apos;s going on — a pump-out, an install, grading or an emergency.
+                We&apos;ll call you right back.
               </p>
               <ContactForm />
             </div>
@@ -94,8 +94,8 @@ export default function ContactPage() {
         <Reveal className="mt-12">
           <div className="overflow-hidden rounded-lg border border-sand shadow-md">
             <iframe
-              title="Southern Fireside & Home — 305 McGee Rd, Anderson, SC"
-              src="https://www.google.com/maps?q=305+McGee+Rd,+Anderson,+SC+29625&output=embed"
+              title="Davis Septic, Grading & Pumping — Belton, SC"
+              src="https://www.google.com/maps?q=Davis+Septic+Grading+and+Pumping,+Belton,+SC&output=embed"
               className="h-[22rem] w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

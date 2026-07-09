@@ -40,7 +40,7 @@ export default function Header() {
       <div className="bg-grad text-white">
         <div className="container-x flex h-10 items-center justify-between gap-3">
           <p className="truncate text-[0.72rem] font-semibold uppercase tracking-[0.08em] sm:text-[0.8rem]">
-            Serving Anderson, SC &amp; the Upstate for cozy homes
+            5.0★ · 230 Reviews · Belton &amp; Anderson for 30+ Years · &quot;The Crap Magician&quot;
           </p>
           <div className="flex items-center gap-2">
             {socials.map((s) => (
@@ -62,7 +62,7 @@ export default function Header() {
       {/* black main bar */}
       <div className="bg-soot">
         <div className="container-x flex h-[4.75rem] items-center justify-between">
-          <Link href="/" aria-label="Southern Fireside & Home — home">
+          <Link href="/" aria-label="Davis Septic, Grading & Pumping — home">
             <Logo dark />
           </Link>
 

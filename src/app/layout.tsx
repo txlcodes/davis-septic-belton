@@ -1,35 +1,35 @@
 import type { Metadata } from "next";
-import { Rajdhani, Poppins } from "next/font/google";
+import { Anton, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCall from "@/components/FloatingCall";
 import ChatBot from "@/components/ChatBot";
 
-const rajdhani = Rajdhani({
-  variable: "--font-playfair",
-  weight: ["500", "600", "700"],
+const anton = Anton({
+  variable: "--font-anton",
+  weight: ["400"],
   subsets: ["latin"],
 });
 
-const poppins = Poppins({
-  variable: "--font-figtree",
-  weight: ["400", "500", "600", "700"],
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Southern Fireside & Home | Gas Logs, Fireplaces & Gas Installation in Anderson, SC",
+  title: "Davis Septic, Grading & Pumping | Septic Pumping & Installs in Belton & Anderson, SC",
   description:
-    "Gas logs, fireplaces, inserts, fire pits, grills and gas line installation in Anderson, SC and the Upstate. Local showroom with live burning displays. Call (864) 225-8627.",
+    "Septic tank pumping, septic installation, grading, land clearing and drain-field repair in Belton, Anderson & the Upstate SC. 30+ years, 5.0★ across 230 reviews. Call (864) 617-5035.",
   keywords: [
-    "gas logs Anderson SC",
-    "fireplace store Anderson SC",
-    "gas fireplace installation",
-    "gas line installation Anderson",
-    "fire pit installation Upstate SC",
-    "gas grill hookup",
-    "fireplace repair Anderson SC",
+    "septic pumping Belton SC",
+    "septic tank pumping Anderson SC",
+    "septic system installation Upstate SC",
+    "grading and land clearing Anderson SC",
+    "drain field repair Belton SC",
+    "septic inspection real estate SC",
+    "gravel driveway Belton SC",
   ],
 };
 
@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rajdhani.variable} ${poppins.variable} antialiased`}>
+      <body className={`${anton.variable} ${inter.variable} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

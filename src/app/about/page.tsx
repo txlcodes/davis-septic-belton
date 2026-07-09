@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Flame, ShieldCheck, Store, MapPin } from "lucide-react";
+import { Truck, ShieldCheck, Star, MapPin } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import CTA from "@/components/CTA";
 import Reveal from "@/components/Reveal";
 import { site, reasons } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About | Southern Fireside & Home — Anderson, SC's Hearth & Gas Specialists",
+  title: "About | Davis Septic, Grading & Pumping — Belton & Anderson, SC",
   description:
-    "Southern Fireside & Home is Anderson's local hearth shop: gas logs, fireplaces, fire pits and gas installation with a showroom on McGee Rd.",
+    "Davis Septic, Grading & Pumping is a family-run Upstate SC septic company: 30+ years of pumping, installs, grading and repair, with 230 five-star reviews. Based in Belton.",
 };
 
 export default function AboutPage() {
@@ -17,8 +17,8 @@ export default function AboutPage() {
     <>
       <PageHero
         kicker="About us"
-        title="A local shop that lives and breathes fire."
-        desc="Southern Fireside & Home is where Anderson comes to warm up — a real showroom, real installers, and advice you can trust."
+        title="The Upstate's Crap Magician, for 30+ years."
+        desc="Davis Septic, Grading & Pumping is a family-run Belton outfit — our own trucks and equipment, experienced hands, and 230 five-star reviews to show for it."
       />
 
       <section className="container-x py-16 md:py-20">
@@ -26,24 +26,24 @@ export default function AboutPage() {
           <Reveal>
             <span className="kicker">Who we are</span>
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-              More than a store — a hearth specialist.
+              A family name you can trust in the dirt.
             </h2>
             <p className="mt-5 leading-relaxed text-bark">
-              Big-box stores will sell you a box and wish you luck. We do it differently. At
-              our showroom on McGee Rd you can stand in front of live burning displays, compare
-              flames side by side, and talk to people who install these units week in and week
-              out.
+              The big outfits send a rotating cast of subcontractors and hand you a bill. We do
+              it differently. When you call Davis Septic you get the owner&apos;s own crew and
+              our own equipment — the same folks who&apos;ve been pumping, installing and grading
+              across the Upstate for more than thirty years.
             </p>
             <p className="mt-4 leading-relaxed text-bark">
-              Then our own installers bring it home: running the gas line, setting the unit,
-              testing every connection, and walking you through the controls before we leave.
-              One team, start to finish — that&apos;s how gas work should be done.
+              We find the real problem, tell you straight what it needs, and get it done — then
+              backfill, level and clean up so your yard looks like we were never there. One team,
+              start to finish. That&apos;s how this work should be done.
             </p>
             <ul className="mt-7 space-y-3.5">
               {[
-                { icon: Store, text: "Local showroom with live burning displays" },
-                { icon: ShieldCheck, text: "Every line pressure-tested before light-up" },
-                { icon: Flame, text: "Gas logs, fireplaces, fire pits, grills & lines" },
+                { icon: Star, text: "5.0★ across 230 Google reviews" },
+                { icon: ShieldCheck, text: "Licensed, insured & 30+ years local" },
+                { icon: Truck, text: "Septic, grading, pumping, drains & gravel" },
                 { icon: MapPin, text: site.address },
               ].map(({ icon: Icon, text }) => (
                 <li key={text} className="flex items-center gap-3 font-semibold text-char">
@@ -59,8 +59,8 @@ export default function AboutPage() {
             <div className="grid gap-5">
               <div className="relative h-64 overflow-hidden rounded-lg">
                 <Image
-                  src="/images/stone-fireplace.jpg"
-                  alt="Gas fireplace with stone surround"
+                  src="/images/truck.jpg"
+                  alt="Davis Septic pump truck on the job"
                   fill
                   className="object-cover"
                 />
@@ -68,16 +68,16 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-5">
                 <div className="relative h-44 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/gas-logs.jpg"
-                    alt="Vented gas log set"
+                    src="/images/septic-tank.jpg"
+                    alt="Concrete septic tank uncovered for pumping"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="relative h-44 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/firepit.jpg"
-                    alt="Outdoor gas fire pit at dusk"
+                    src="/images/excavator.jpg"
+                    alt="Heavy equipment for grading and land clearing"
                     fill
                     className="object-cover"
                   />

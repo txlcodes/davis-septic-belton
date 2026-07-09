@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, MapPin, Clock, Flame } from "lucide-react";
+import { Phone, MapPin, Clock, Star } from "lucide-react";
 import Logo from "./Logo";
 import { site, nav, areas } from "@/lib/site";
 
@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="md:col-span-2">
           <Logo dark />
           <p className="mt-4 max-w-md text-sm leading-relaxed">
-            Gas logs, fireplaces, fire pits and gas line installation for Anderson and the
-            Upstate. Visit our showroom, see the fire burning, and let our installers take it
-            from there.
+            Septic pumping, installation, grading, land clearing and drain-field repair for
+            Belton, Anderson and the Upstate. Family-run for 30+ years — we&apos;ll make your
+            crap disappear and leave your yard right.
           </p>
           <a
             href={site.phoneHref}
@@ -50,8 +50,8 @@ export default function Footer() {
               {site.hours}
             </li>
             <li className="flex items-start gap-2.5">
-              <Flame size={15} className="mt-0.5 shrink-0 text-glow" />
-              Live burning displays in-store
+              <Star size={15} className="mt-0.5 shrink-0 text-brass" />
+              5.0★ · 230 Google reviews
             </li>
           </ul>
         </div>
