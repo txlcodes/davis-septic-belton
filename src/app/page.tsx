@@ -53,24 +53,33 @@ const STATS = [
 export default function Home() {
   return (
     <>
-      {/* ============ HERO (text panel + prominent real photo) ============ */}
-      <section className="relative overflow-hidden bg-grad-deep">
-        <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
+      {/* ============ HERO (full-bleed real truck photo background) ============ */}
+      <section className="relative overflow-hidden">
+        <Image
+          src="/images/truck.jpg"
+          alt="Davis Septic pump truck — 'We'll Make Your CRAP Disappear'"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-soot/85 via-soot/55 to-soot/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-soot/80 via-transparent to-transparent" />
+        <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
           <Reveal variant="left">
             <span className="inline-flex items-center gap-2 rounded-md bg-ember/20 px-3 py-1.5 text-[0.72rem] font-bold uppercase tracking-[0.14em] text-glow ring-1 ring-ember/40">
               <Sparkles size={13} className="flicker" /> Belton &amp; Anderson · 5.0★ · 230 Reviews
             </span>
-            <h1 className="mt-4 max-w-2xl text-4xl font-bold leading-[1.05] text-linen sm:text-5xl lg:text-[3.4rem]">
+            <h1 className="mt-4 max-w-2xl text-4xl font-bold leading-[1.05] text-linen drop-shadow-lg sm:text-5xl lg:text-[3.4rem]">
               Septic Pumping, Installs &amp; Grading in{" "}
               <span className="text-grad">the Upstate</span>
             </h1>
-            <p className="mt-5 max-w-xl leading-relaxed text-sand/85">
+            <p className="mt-5 max-w-xl leading-relaxed text-sand/90 drop-shadow">
               A backed-up tank never waits for a good time — and a new system only lasts when
               it&apos;s installed right. For 30+ years Davis Septic has pumped, installed, graded
               and repaired systems across Belton, Anderson and the surrounding counties. We move
               the dirt, do the dirty work, and leave your yard looking like we were never there.
             </p>
-            <p className="mt-4 max-w-xl leading-relaxed text-sand/85">
+            <p className="mt-4 max-w-xl leading-relaxed text-sand/90 drop-shadow">
               Upfront pricing, clean work, and straight answers. As our truck says —
               <span className="font-semibold text-linen"> we&apos;ll make your crap disappear.</span>
             </p>
@@ -91,23 +100,7 @@ export default function Home() {
           </Reveal>
 
           <Reveal variant="right" delay={140}>
-            <div className="space-y-5">
-              <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl shadow-black/50 ring-1 ring-white/15">
-                <Image
-                  src="/images/truck.jpg"
-                  alt="Davis Septic pump truck — 'We'll Make Your CRAP Disappear'"
-                  fill
-                  priority
-                  className="object-cover"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent px-4 py-3">
-                  <p className="text-xs font-bold uppercase tracking-wider text-white">
-                    &quot;The Crap Magician&quot; · Belton, SC
-                  </p>
-                </div>
-              </div>
-              <HeroForm />
-            </div>
+            <HeroForm />
           </Reveal>
         </div>
       </section>
