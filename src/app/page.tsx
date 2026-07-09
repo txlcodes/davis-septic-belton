@@ -53,17 +53,9 @@ const STATS = [
 export default function Home() {
   return (
     <>
-      {/* ============ HERO (split: content + red form card) ============ */}
-      <section className="relative overflow-hidden">
-        <Image
-          src="/images/truck.jpg"
-          alt="Davis Septic pump truck parked at a job site"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-soot/95 via-soot/88 to-soot/65" />
-        <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
+      {/* ============ HERO (text panel + prominent real photo) ============ */}
+      <section className="relative overflow-hidden bg-grad-deep">
+        <div className="container-x relative grid items-center gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <Reveal variant="left">
             <span className="inline-flex items-center gap-2 rounded-md bg-ember/20 px-3 py-1.5 text-[0.72rem] font-bold uppercase tracking-[0.14em] text-glow ring-1 ring-ember/40">
               <Sparkles size={13} className="flicker" /> Belton &amp; Anderson · 5.0★ · 230 Reviews
@@ -99,7 +91,23 @@ export default function Home() {
           </Reveal>
 
           <Reveal variant="right" delay={140}>
-            <HeroForm />
+            <div className="space-y-5">
+              <div className="relative aspect-[16/11] overflow-hidden rounded-2xl shadow-2xl shadow-black/50 ring-1 ring-white/15">
+                <Image
+                  src="/images/truck.jpg"
+                  alt="Davis Septic pump truck — 'We'll Make Your CRAP Disappear'"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent px-4 py-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-white">
+                    &quot;The Crap Magician&quot; · Belton, SC
+                  </p>
+                </div>
+              </div>
+              <HeroForm />
+            </div>
           </Reveal>
         </div>
       </section>
