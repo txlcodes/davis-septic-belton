@@ -132,7 +132,7 @@ export const services = [
   {
     title: "Sewer & Drain-Field Repair",
     desc: "Broken lines, failed drain fields, root intrusion and slow drains. We dig, diagnose and repair sewer and leach lines without tearing up the whole yard.",
-    img: "/images/septic-install.jpg",
+    img: "/images/drain-trench.jpg",
   },
   {
     title: "Gravel, Driveways & Demolition",
@@ -262,6 +262,7 @@ export const gallery = [
   { img: "/images/truck.jpg", title: "The Davis Septic pump truck on the job" },
   { img: "/images/septic-tank.jpg", title: "Concrete septic tank uncovered for pumping" },
   { img: "/images/septic-install.jpg", title: "New septic tanks set in the trench" },
+  { img: "/images/drain-trench.jpg", title: "Drain-field line laid in fresh Upstate clay" },
   { img: "/images/excavator.jpg", title: "Heavy iron ready for grading & clearing" },
   { img: "/images/gravel.jpg", title: "Fresh gravel driveway, tree-lined and graded" },
   { img: "/images/rural-home.jpg", title: "Keeping Upstate homes running clean" },

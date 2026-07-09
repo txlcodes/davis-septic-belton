@@ -92,7 +92,7 @@ export default function Home() {
 
           <Reveal variant="right" delay={140}>
             <div className="space-y-5">
-              <div className="relative aspect-[16/11] overflow-hidden rounded-2xl shadow-2xl shadow-black/50 ring-1 ring-white/15">
+              <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl shadow-black/50 ring-1 ring-white/15">
                 <Image
                   src="/images/truck.jpg"
                   alt="Davis Septic pump truck — 'We'll Make Your CRAP Disappear'"
