@@ -3,11 +3,7 @@ import Image from "next/image";
 export default function Logo({ dark = false }: { dark?: boolean }) {
   return (
     <span className="inline-flex items-center">
-      <span
-        className={`relative grid h-16 w-[5.6rem] place-items-center rounded-lg px-1 py-0.5 ${
-          dark ? "bg-linen/95 ring-1 ring-white/20" : ""
-        }`}
-      >
+      <span className="relative grid h-16 w-[7.5rem] place-items-center">
         <Image
           src="/images/logo.png"
           alt="Davis Septic, Grading & Pumping — Belton, SC"
