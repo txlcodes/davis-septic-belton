@@ -115,34 +115,34 @@ export const products = [
 
 export const services = [
   {
-    title: "Septic Tank Pumping",
-    desc: "Scheduled maintenance pump-outs and 'it's backing up NOW' emergencies. We locate, dig up, pump and inspect your tank — and tell you honestly how it looks.",
+    title: "Septic Pumping & Tank Cleaning",
+    desc: "Scheduled pump-outs and 'it's backing up NOW' emergencies. We locate, dig up, pump and clean your tank — and tell you honestly how it looks.",
     img: "/images/septic-tank.jpg",
   },
   {
-    title: "Septic System Installation",
-    desc: "New septic systems and tank replacements, permitted and inspected. Concrete or plastic, conventional or low-pressure — sized to your home and soil test.",
+    title: "Septic Installation & Permits",
+    desc: "New septic systems and tank replacements — permitted, inspected and sized to your home and soil test. We handle the septic permits so you don't have to.",
     img: "/images/septic-install.jpg",
   },
   {
-    title: "Grading & Land Clearing",
-    desc: "Lot grading, yard leveling, land clearing, brush and stump removal, and 'yard rip.' We move dirt for a living and leave a clean, buildable, drainable grade.",
-    img: "/images/excavator.jpg",
+    title: "Septic Maintenance & Inspections",
+    desc: "Routine maintenance, septic inspections for peace of mind or a home closing, and photo updates from the crew so you see exactly what we found.",
+    img: "/images/gravel.jpg",
   },
   {
-    title: "Sewer & Drain-Field Repair",
+    title: "Sewer Repair",
     desc: "Broken lines, failed drain fields, root intrusion and slow drains. We dig, diagnose and repair sewer and leach lines without tearing up the whole yard.",
     img: "/images/drain-trench.jpg",
   },
   {
-    title: "Gravel, Driveways & Demolition",
-    desc: "Gravel driveways built and refreshed, culverts set, drainage cut, and small demolition and haul-off. If it needs digging, hauling or leveling, we handle it.",
-    img: "/images/gravel.jpg",
+    title: "Pump & Lift Stations",
+    desc: "Pump lifting stations serviced, repaired and replaced — floats, alarms and pumps for residential and commercial systems across the Upstate.",
+    img: "/images/truck.jpg",
   },
   {
-    title: "Real Estate & Emergency Service",
-    desc: "Fast pump-outs and inspections for closings and rentals, plus after-hours emergencies when a system fails. One call and we're on the way.",
-    img: "/images/truck.jpg",
+    title: "Septic Grading & Land Clearing",
+    desc: "Lot grading, yard leveling, land clearing and driveways. We move dirt for a living and leave a clean, buildable, drainable grade.",
+    img: "/images/excavator.jpg",
   },
 ];
 
@@ -188,21 +188,37 @@ export const steps = [
   },
 ];
 
+// Real 5-star Google reviews (verbatim)
 export const testimonials = [
   {
-    name: "Rebecca H.",
-    area: "Anderson, SC",
-    text: "Our tank backed up on a Sunday and they answered the phone and came out. Pumped it, found the real problem, and didn't try to sell us a new system like the last guy. Left the yard clean. Lifesavers.",
+    name: "Katelyn Donnelly",
+    area: "Google Review",
+    text: "Very professional and knows their stuff! Trustworthy to do the job right. John will send picture updates and they give good advice for every septic system that can help in the long run. Highly recommend these two guys. They will make your CRAP disappear!",
   },
   {
-    name: "Mark & Dana T.",
-    area: "Belton, SC",
-    text: "Davis graded our lot and put in a new septic system for our build. Permitted, inspected, and the price matched the quote to the dollar. Heavy equipment everywhere and you'd never know it afterward.",
+    name: "Dalton Williams",
+    area: "Google Review · Local Guide",
+    text: "Exceeded expectations. Had what I thought was a small simple issue (septic tank clean out) — turned out to be a half-day issue. JJ and his help worked hard to fix all issues and keep me updated while I was out at work. Went above and beyond fixing issues. I would HIGHLY recommend using their service.",
   },
   {
-    name: "Jim P.",
-    area: "Williamston, SC",
-    text: "Needed a septic inspection and pump for a house closing on short notice. They fit us in, got the paperwork done, and the buyer's agent was impressed. Thirty years in and they still hustle.",
+    name: "Wendy Hand",
+    area: "Google Review · Local Guide",
+    text: "Great same day service and very reasonably priced. It's hard to find a company that you can trust. Thank you so much for the two jobs that you did for me. I would definitely recommend them to anyone who is needing septic tank work.",
+  },
+  {
+    name: "Laura White",
+    area: "Google Review",
+    text: "Chose this family-run company based on all the raving reviews... they were not wrong. Fast, knowledgeable, and thorough with a full system replacement/relocation. Answered all my questions along the way and took care to mark the line in anticipation of foundation work for an addition. Highly recommend!!!",
+  },
+  {
+    name: "Angela Bryson",
+    area: "Google Review",
+    text: "Septic tank was full and the Davis guys came out and immediately got us fixed up! Timely service and great guys! I'd recommend to anyone!",
+  },
+  {
+    name: "David Kor",
+    area: "Google Review · Local Guide",
+    text: "Great service! Came well prepared with mini ex and pump truck. They were very careful around our stuff, very professional. He even gave me some necessary recommendations. Very fairly priced. Highly recommended! Thanks for the same day service!",
   },
 ];
 

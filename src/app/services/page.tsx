@@ -13,41 +13,41 @@ export const metadata: Metadata = {
 };
 
 const DETAILS: Record<string, string[]> = {
-  "Septic Tank Pumping": [
+  "Septic Pumping & Tank Cleaning": [
     "Routine maintenance pump-outs",
     "Emergency backups — same-day",
-    "Tank located, dug up & inspected",
+    "Tank located, dug up & cleaned",
     "Honest read on your system's health",
   ],
-  "Septic System Installation": [
+  "Septic Installation & Permits": [
     "Permitted new systems & replacements",
-    "Concrete & plastic tanks",
+    "Septic permits handled for you",
     "Sized to your soil test & home",
     "Drain field built & inspected",
   ],
-  "Grading & Land Clearing": [
-    "Lot grading & yard leveling",
-    "Land clearing & 'yard rip'",
-    "Brush & stump removal",
-    "Clean, buildable, drainable grade",
+  "Septic Maintenance & Inspections": [
+    "Scheduled maintenance visits",
+    "Septic inspections for home closings",
+    "Photo updates from the crew",
+    "Advice to keep your system healthy",
   ],
-  "Sewer & Drain-Field Repair": [
+  "Sewer Repair": [
     "Failed drain / leach fields",
     "Broken & root-clogged lines",
     "Slow-drain diagnosis",
     "Dug & repaired without wrecking the yard",
   ],
-  "Gravel, Driveways & Demolition": [
-    "Gravel driveways built & refreshed",
-    "Culverts & drainage cut",
-    "Small demolition & haul-off",
-    "Holds up to Carolina rain",
+  "Pump & Lift Stations": [
+    "Lift-station pumps replaced",
+    "Floats & alarms serviced",
+    "Residential & commercial",
+    "Emergency call-outs",
   ],
-  "Real Estate & Emergency Service": [
-    "Pump-outs & inspections for closings",
-    "Rentals & property managers",
-    "After-hours emergencies",
-    "One call and we're on the way",
+  "Septic Grading & Land Clearing": [
+    "Lot grading & yard leveling",
+    "Land clearing & driveways",
+    "Brush & stump removal",
+    "Clean, buildable, drainable grade",
   ],
 };
 

@@ -467,12 +467,25 @@ export default function Home() {
             <h2 className="mt-2 text-3xl font-bold text-linen md:text-4xl">
               The Upstate Keeps Our Phone Ringing
             </h2>
+            <a
+              href={site.mapsHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-glow underline-offset-4 hover:underline"
+            >
+              5.0 ★ · Read all {site.reviewCount} reviews on Google
+            </a>
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <Reveal key={t.name} variant="up" delay={i * 110}>
                 <figure className="card-lift h-full rounded-lg bg-white/[0.04] p-7 ring-1 ring-white/10">
-                  <Quote className="text-glow" size={26} />
+                  <div className="flex items-center justify-between">
+                    <Quote className="text-glow" size={26} />
+                    <span aria-label="5 out of 5 stars" className="text-sm tracking-[0.15em] text-brass">
+                      ★★★★★
+                    </span>
+                  </div>
                   <blockquote className="mt-4 text-[0.95rem] leading-relaxed text-sand/90">
                     &ldquo;{t.text}&rdquo;
                   </blockquote>
